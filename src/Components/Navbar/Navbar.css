@@ -1,0 +1,44 @@
+.Navbar {
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 1px #4b4b4b;
+    font-weight: 300;
+    font-size: 20px;
+    padding: 0px 25%;
+}
+
+@media screen and (min-width: 650px) and (max-width: 1440px) {
+    .Navbar {
+        padding: 0px 12.5%;
+    }
+}
+
+@media screen and (max-width: 649px) {
+    .Navbar {
+        padding: 0px 10px;
+    }
+}
+
+.logo {
+    height: 32px;
+}
+
+.links {
+    list-style: none;
+
+}
+
+li {
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.resume {
+    color: #9748E5;
+    border: 2px solid #9748E5;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: 400;
+}
