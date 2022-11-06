@@ -1,0 +1,40 @@
+.Projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 25%;
+}
+
+@media screen and (min-width: 650px) and (max-width: 1440px) {
+    .Projects {
+        margin: 0px 12.5%;
+    }
+}
+
+@media screen and (max-width: 649px) {
+    .Projects {
+        margin: 0px;
+    }
+}
+
+.project-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    font-size: clamp(32px, 3.951vw + 16.593px, 64px);
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 54px;
+}
+
+.project {
+
+}
+
+.emphasis {
+    color: #9748E5;
+}

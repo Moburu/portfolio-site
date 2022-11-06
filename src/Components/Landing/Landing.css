@@ -27,10 +27,10 @@ h1 {
     margin-bottom: 0px;
 }
 
-.name {
+.emphasis {
     color: #9748E5;
 }
-
+    
 .description {
     font-size: clamp(16px, 1.975vw + 8.296px, 32px);
     text-align: left;
