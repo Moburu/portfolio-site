@@ -4,7 +4,9 @@ import './Contact.css'
 
 const Contact = props => {
   return (
-    <div>Contact</div>
+    <div className='Contact'>
+      
+    </div>
   )
 }
 

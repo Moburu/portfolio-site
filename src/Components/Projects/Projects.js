@@ -43,7 +43,7 @@ const Overlay = styled.div`
   opacity: 50%;
   transition: opacity .5s;
   position: absolute;
-  ${Container}:hover & {
+  ${Project}:hover & {
     opacity: 0%;
   }
 `;
