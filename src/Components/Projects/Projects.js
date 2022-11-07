@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import './Projects.css'
 import styled from 'styled-components';
+import google from './google.png'
 
 const Project = styled.div`
   width: 100%;
@@ -30,6 +31,8 @@ const Container = styled.div`
   width: 320px;
   height: 180px;
   border-radius: 5px;
+  background-image: url(${props => props.src});
+  background-size: contain;
 `;
 
 const Overlay = styled.div`
@@ -38,7 +41,11 @@ const Overlay = styled.div`
   background-color: #9748E5;
   border-radius: 5px;
   opacity: 50%;
+  transition: opacity .5s;
   position: absolute;
+  ${Container}:hover & {
+    opacity: 0%;
+  }
 `;
 
 const Title = styled.h2`
@@ -61,13 +68,13 @@ const Projects = props => {
               <DescText align="right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</DescText>
               <DescText align="right">HTML - CSS - JS - Node - React</DescText>
             </Description>
-            <Container position="end">
+            <Container src={google}>
               <Overlay />
               <Title position="right">Lorem Ipsum</Title>
             </Container>
           </Project>
           <Project>
-            <Container position="start">
+            <Container src={google}>
               <Overlay />
               <Title position="left">Lorem Ipsum</Title>
             </Container>
@@ -81,7 +88,7 @@ const Projects = props => {
               <DescText align="right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</DescText>
               <DescText align="right">HTML - CSS - JS - Node - React</DescText>
             </Description>
-            <Container position="end">
+            <Container src={google}>
               <Overlay />
               <Title position="right">Lorem Ipsum</Title>
             </Container>
