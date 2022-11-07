@@ -38,6 +38,7 @@
 .about-txt {
     margin: 10px;
     font-size: clamp(16px, 1.975vw + 8.296px, 32px);
+    font-weight: 200;
     text-align: left;
 }
 

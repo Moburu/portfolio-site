@@ -1,0 +1,24 @@
+.Contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: left;
+    margin: 50px 25%;
+    padding: 10px;
+}
+
+@media screen and (min-width: 650px) and (max-width: 1440px) {
+    .Contact {
+        margin: 0px 12.5%;
+    }
+}
+
+@media screen and (max-width: 649px) {
+    .Contact {
+        margin: 0px;
+    }
+}
+
+.title-3 {
+    text-align: center;
+}

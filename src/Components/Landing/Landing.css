@@ -25,6 +25,7 @@ h1 {
     text-align: left;
     margin-top: 0px;
     margin-bottom: 0px;
+    font-weight: 300;
 }
 
 .emphasis {
@@ -33,6 +34,7 @@ h1 {
 
 .description {
     font-size: clamp(16px, 1.975vw + 8.296px, 32px);
+    font-weight: 200;
     text-align: left;
     margin-bottom: 0px;
     margin-top: 20px;

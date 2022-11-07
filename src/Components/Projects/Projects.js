@@ -11,6 +11,7 @@ const Project = styled.div`
   justify-content: space-around;
   align-items: center;
   margin: 10px 10px 54px 10px;
+  transform: scale(1.3);
 `;
 
 const Description = styled.div`
@@ -51,7 +52,7 @@ const Overlay = styled.div`
 const Title = styled.h2`
   font-size: 32px;
   font-family: 'Source Code Pro', monospace;
-  font-weight: 400;
+  font-weight: 300;
   width: 100%;
   text-align: ${props => props.position};
   margin: auto;
