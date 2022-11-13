@@ -5,6 +5,7 @@
     align-items: left;
     margin: 50px 25%;
     padding: 10px;
+    height: 100vh;
 }
 
 @media screen and (min-width: 650px) and (max-width: 1440px) {

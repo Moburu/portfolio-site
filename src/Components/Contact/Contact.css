@@ -1,10 +1,16 @@
 .Contact {
     display: flex;
     flex-direction: column;
-    justify-content: center;  
+    justify-content: center;
     align-items: left;
-    margin: 50px 25%;
+    margin: 0px 25% 0px 25%;
     padding: 10px;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 @media screen and (min-width: 650px) and (max-width: 1440px) {
@@ -21,4 +27,13 @@
 
 .title-3 {
     text-align: center;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 200px;
 }

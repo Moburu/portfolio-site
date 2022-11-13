@@ -61,7 +61,7 @@ const Title = styled.h2`
 
 const Projects = props => {
   return (
-    <div className='Projects'>
+    <div id="projects" className='Projects'>
       <h1 className='title'>Here are some of the <br /><span className='emphasis'>projects</span> I've worked on.</h1>
       <div className='project-grid'>
           <Project>
