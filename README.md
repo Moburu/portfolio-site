@@ -1,7 +1,13 @@
 TODO:
-- Mobile design (especially for projects)
+High Priority
 - Implement hamburger menu for mobile
-- Add fade-in animations on page content
-- Add on-click button animations for Contact sections
 - Make About section prettier
+- Add fade-in animations on page content
+- Add footer
+Low Priority
+- Fix projects at very small screen sizes (~400px wide)
+- Add on-click button animations for Contact sections
 - Remove all placeholder text/images
+- Fix title and favicon
+- Write up an actual readme
+- Navbar onhover animation
