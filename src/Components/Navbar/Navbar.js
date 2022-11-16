@@ -37,6 +37,10 @@ const Navbar = props => {
     }
   };
 
+  const handleClick = e => {
+    e.preventDefault();
+  }
+
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -45,6 +49,11 @@ const Navbar = props => {
   return (
     <div className={isVisible ? "Navbar" : "Navbar hidden"}>
       <img className="logo" src={logo} alt="The site logo. An S within a circle." />
+      <div className='hamburger-menu' onClick={handleClick}>
+        <span className='bar'></span>
+        <span className='bar'></span>
+        <span className='bar'></span>
+      </div>
       <ul className="links">
         <a href="#projects">
           <li>Projects</li>

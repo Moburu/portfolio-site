@@ -10,8 +10,13 @@ const Project = styled.div`
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin: 10px 10px 54px 10px;
-  transform: scale(1.3);
+  margin: 15px 10px 54px 10px;
+  transform: scale(1.25);
+  @media screen and (max-width: 899px) {
+    flex-direction: ${props => props.position === "right" ? "column-reverse" : "column"};
+    width: auto;
+    margin-top: 50px;
+  }
 `;
 
 const Description = styled.div`
@@ -19,6 +24,10 @@ const Description = styled.div`
   height: 180px;
   border-top: 1px solid white;
   margin: 10px;
+  @media screen and (max-width: 899px) {
+    border-top: 0px;
+    width: ;
+  }
 `;
 
 const DescText = styled.p`
@@ -26,6 +35,9 @@ const DescText = styled.p`
   font-size: 16px;
   font-weight: 300;
   text-align: ${props => props.align};
+  @media screen and (max-width: 899px) {
+    text-align: center;
+  }
 `;
 
 const Container = styled.div`
@@ -34,6 +46,10 @@ const Container = styled.div`
   border-radius: 5px;
   background-image: url(${props => props.src});
   background-size: contain;
+  @media screen and (max-width: 899px) {
+    margin-bottom: -10px;
+    max-width: 100%;
+  }
 `;
 
 const Overlay = styled.div`
@@ -47,16 +63,22 @@ const Overlay = styled.div`
   ${Project}:hover & {
     opacity: 0%;
   }
+  @media screen and (max-width: 899px) {
+    width: ;
+    height: ;
+  }
 `;
 
 const Title = styled.h2`
   font-size: 32px;
   font-family: 'Source Code Pro', monospace;
   font-weight: 300;
-  width: 100%;
   text-align: ${props => props.position};
   margin: auto;
   transform: translate(0%, -100%);
+  @media screen and (max-width: 899px) {
+    text-align: center;
+  }
 `;
 
 const Projects = props => {
@@ -64,7 +86,7 @@ const Projects = props => {
     <div id="projects" className='Projects'>
       <h1 className='title'>Here are some of the <br /><span className='emphasis'>projects</span> I've worked on.</h1>
       <div className='project-grid'>
-          <Project>
+          <Project position="right">
             <Description>
               <DescText align="right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</DescText>
               <DescText align="right">HTML - CSS - JS - Node - React</DescText>
@@ -74,7 +96,7 @@ const Projects = props => {
               <Title position="right">Lorem Ipsum</Title>
             </Container>
           </Project>
-          <Project>
+          <Project position="left">
             <Container src={google}>
               <Overlay />
               <Title position="left">Lorem Ipsum</Title>
@@ -84,7 +106,7 @@ const Projects = props => {
               <DescText align="left">HTML - CSS - JS - Node - React</DescText>
             </Description>
           </Project>
-          <Project>
+          <Project position="right">
             <Description >
               <DescText align="right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</DescText>
               <DescText align="right">HTML - CSS - JS - Node - React</DescText>

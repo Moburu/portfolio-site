@@ -3,19 +3,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0px 25%;
-    padding-top: 100px;
+    padding: 0px 25%;
+    margin-top: 100px;
 }
 
 @media screen and (min-width: 650px) and (max-width: 1440px) {
     .Projects {
-        margin: 0px 12.5%;
+        padding: 0px 20px;
+        width: 90vw;
     }
 }
 
 @media screen and (max-width: 649px) {
     .Projects {
-        margin: 0px;
+        padding: 0px 10px;
+        width: 90%;
     }
 }
 
@@ -23,12 +25,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .title {
     font-size: clamp(32px, 3.951vw + 16.593px, 64px);
     text-align: center;
-    margin-top: 0px;
+    margin-top: -50px;
     margin-bottom: 74px;
 }
 

@@ -3,20 +3,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: left;
-    margin: 50px 25%;
-    padding: 10px;
+    padding: 0 25%;
     height: 100vh;
+    margin-top: 100px;
 }
 
 @media screen and (min-width: 650px) and (max-width: 1440px) {
     .About {
-        margin: 0px 12.5%;
+        padding: 0px 20px;
     }
 }
 
 @media screen and (max-width: 649px) {
     .About {
-        margin: 0px;
+        padding: 0px 10px;
     }
 }
 
@@ -28,16 +28,16 @@
 }
 
 .about-img {
-    width: 258px;
-    height: 410px;
+    width: 50px;
+    height: 50px;
     background-color: grey;
-    margin: 10px;
+    margin: 0px;
     float: left;
     vertical-align: middle;
 }
 
 .about-txt {
-    margin: 10px;
+    margin: 0px;
     font-size: clamp(16px, 1.975vw + 8.296px, 32px);
     font-weight: 200;
     text-align: left;

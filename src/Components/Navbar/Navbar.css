@@ -49,3 +49,15 @@ li {
     display: inline-block;
     padding-left: 20px;
 }
+
+.hamburger-meny {
+    visibility: hidden;
+}
+
+
+.bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
