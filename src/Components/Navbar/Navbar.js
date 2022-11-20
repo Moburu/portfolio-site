@@ -20,6 +20,7 @@ const Resume = styled.span`
 const Navbar = props => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
+  const [isSidebarVisisble, setIsSidebarVisible] = useState(false);
 
   const handleScroll = () => {
     const currentScrollPos = window.pageYOffset;
@@ -44,28 +45,34 @@ const Navbar = props => {
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [prevScrollPos, isVisible, handleScroll]);
+  }, [prevScrollPos, isVisible]);
 
   return (
-    <div className={isVisible ? "Navbar" : "Navbar hidden"}>
-      <img className="logo" src={logo} alt="The site logo. An S within a circle." />
-      <div className='hamburger-menu' onClick={handleClick}>
-        <span className='bar'></span>
-        <span className='bar'></span>
-        <span className='bar'></span>
+    <div className='navbar-wrapper'>
+      <div className={isVisible ? "Navbar" : "Navbar hidden"}>
+        <div className='overlay'>
+        </div>
+        <div className='side-menu'>
+        </div>
+        <img className="logo" src={logo} alt="The site logo. An S within a circle." />
+        <div className='hamburger-menu'>
+          <span className='bar'></span>
+          <span className='bar'></span>
+          <span className='bar'></span>
+        </div>
+        <ul className="links">
+          <a href="#projects">
+            <li>Projects</li>
+          </a>
+          <a href="#about">
+            <li>About</li>
+          </a>
+          <a href="#contact">
+            <li>Contact</li>
+          </a>
+          <li><Resume>Resume</Resume></li>
+        </ul>
       </div>
-      <ul className="links">
-        <a href="#projects">
-          <li>Projects</li>
-        </a>
-        <a href="#about">
-          <li>About</li>
-        </a>
-        <a href="#contact">
-          <li>Contact</li>
-        </a>
-        <li><Resume>Resume</Resume></li>
-      </ul>
     </div>
   )
 }

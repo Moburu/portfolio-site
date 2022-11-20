@@ -1,7 +1,7 @@
 TODO:
 High Priority
 - Implement hamburger menu for mobile
-- Make About section prettier
+- Make About section prettier (maybe include skills)
 - Add fade-in animations on page content
 - Add footer
 Low Priority
