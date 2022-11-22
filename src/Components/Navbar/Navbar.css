@@ -18,7 +18,7 @@
     background-color: rgba(61, 61, 61, .8);
 }
 
-.hidden {
+.Navbar.hidden {
     transform: translateY(-100%);
 }
 
@@ -28,6 +28,24 @@
         width: 75%;
     }
 }
+
+.links {
+    display: inline-block;
+    padding-left: 20px;
+    list-style: none;
+}
+
+.links li {
+    display: inline;
+    padding: 1em;
+    transition: .25s ease-in;
+}
+
+/* want to put in but have to change resume button */
+/* .links li:hover {
+    background-color: #9748E5;
+} */
+
 
 @media screen and (max-width: 649px) {
     .Navbar {
@@ -50,16 +68,6 @@
     height: 32px;
 }
 
-.links {
-    list-style: none;
-
-}
-
-li {
-    display: inline-block;
-    padding-left: 20px;
-}
-
 .hamburger-menu {
     width: 2rem;
     height: 1.5rem;
@@ -71,18 +79,36 @@ li {
     right: 20px;
 }
 
+.hamburger-menu.close span:nth-child(1) {
+    transform-origin: left center;
+    transform: translateX(1px) translateY(-3px) rotate(45deg);
+}
+
+.hamburger-menu.close span:nth-child(2) {
+    opacity: 0;
+    width: 0;
+}
+
+.hamburger-menu.close span:nth-child(3) {
+    transform-origin: left center;
+    transform: translateX(1px) translateY(-1.5px) rotate(-45deg);
+}
+
 .bar {
     height: 3px;
     width: 100%;
     background-color: white;
     border-radius: 20%;
+    transition: .25s ease-in;
 }
 
 .overlay {
     content: "";
-    display: none;
-    background: rgba(0, 0, 0, 0.6);
+    display: block;
+    background: rgba(0, 0, 0, 1);
     position: fixed;
+    transition: opacity .25s ease-in;
+    opacity: 0.6;
     width: 120vw;
     height: 120vh;
     top: 0;
@@ -92,9 +118,17 @@ li {
     z-index: 10;
 }
 
+.overlay.hidden {
+    display: none;
+    opacity: 0;
+}
+
 .side-menu {
-    height: 100vh;
-    width: 66%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+    width: 66vw;
     position: fixed;
     background-color: black;
     right: 0;
@@ -103,6 +137,33 @@ li {
     box-shadow: 1px 2px 5px rgb(37, 37, 37);
     backdrop-filter: blur(10px);
     background-color: rgba(61, 61, 61, .8);
-    transition: .5s ease-in;
-    /* transform: translateX(100%); */
+    transition: .25s ease-in;
+}
+
+.side-menu.hidden {
+    transform: translateX(100%);
+}
+
+.sidebar-links {
+    margin-bottom: 10em;
+    width: 100%;
+    padding: 0;
+}
+
+.sidebar-links li {
+    display: block;
+    font-size: 48px;
+    padding: .5em;
+    transition: .25s ease-in;
+    text-align: left;
+}
+
+.sidebar-links > li:nth-child(1) {
+    color: #9748E5;
+    font-weight: 300;
+}
+
+.sidebar-links li:hover:nth-child(n+2) {
+    background-color: #9748E5;
+    padding-left: 2em;
 }
