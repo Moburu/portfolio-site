@@ -5,6 +5,12 @@
     align-items: center;
     padding: 0px 25%;
     margin-top: 100px;
+    opacity: 0;
+    transition: .75s ease-in-out;
+}
+
+.visible {
+    opacity: 1;
 }
 
 @media screen and (min-width: 650px) and (max-width: 1440px) {

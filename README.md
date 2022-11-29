@@ -1,10 +1,9 @@
 TODO:
 High Priority
-- Implement hamburger menu for mobile
 - Make About section prettier (maybe include skills)
-- Add fade-in animations on page content
 - Add footer
 Low Priority
+- Make overlay fade out nicely on closing hamburger menu
 - Add resume download link
 - Fix projects at very small screen sizes (~400px wide)
 - Add on-click button animations for Contact sections

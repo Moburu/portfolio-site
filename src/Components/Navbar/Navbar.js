@@ -84,7 +84,7 @@ const Navbar = props => {
 
           </ul>
         </div>
-        <img className="logo" src={logo} alt="The site logo. An S within a circle." />
+        <a href="#"><img className="logo" src={logo} alt="The site logo. An S within a circle." /></a>
         <div className={isSidebarVisible ? "hamburger-menu close" : "hamburger-menu"} onClick={handleClick}>
           <span className='bar'></span>
           <span className='bar'></span>

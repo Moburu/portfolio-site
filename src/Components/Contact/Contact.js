@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import './Contact.css'
 import styled from 'styled-components'
+import { useEffect, useState, useRef } from 'react'
 
 const Button = styled.button`
   font-family: 'IBM Plex Sans', sans-serif;
@@ -28,8 +29,24 @@ const Button = styled.button`
 `
 
 const Contact = props => {
+  const domRef = useRef();
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      if (entries[0].isIntersecting) {
+        setIsVisible(true);
+        observer.unobserve(domRef.current);
+      }
+    });
+
+    observer.observe(domRef.current);
+
+    return () => observer.disconnect();
+  })
+
   return (
-    <div id="contact" className='Contact'>
+    <div ref={ domRef } id="contact" className={isVisible ? "Contact visible" : "Contact"}>
       <h1 className='title-3'>I'd love to hear from you! <br /><span className='emphasis'>Contact</span> me via the links below:</h1>
       <div className='button-container'>
         <Button>Email</Button>

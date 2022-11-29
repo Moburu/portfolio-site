@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import './Projects.css'
 import styled from 'styled-components';
 import google from './google.png'
+import { useRef, useState, useEffect } from 'react';
 
 const Project = styled.div`
   width: 100%;
@@ -82,8 +83,24 @@ const Title = styled.h2`
 `;
 
 const Projects = props => {
+  const domRef = useRef();
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      if (entries[0].isIntersecting) {
+        setIsVisible(true);
+        observer.unobserve(domRef.current);
+      }
+    });
+
+    observer.observe(domRef.current);
+
+    return () => observer.disconnect();
+  })
+
   return (
-    <div id="projects" className='Projects'>
+    <div ref={ domRef } id="projects" className={isVisible ? "Projects visible" : "Projects"}>
       <h1 className='title'>Here are some of the <br /><span className='emphasis'>projects</span> I've worked on.</h1>
       <div className='project-grid'>
           <Project position="right">

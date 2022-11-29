@@ -37,7 +37,7 @@
 
 .links li {
     display: inline;
-    padding: 1em;
+    padding: .5em;
     transition: .25s ease-in;
 }
 
