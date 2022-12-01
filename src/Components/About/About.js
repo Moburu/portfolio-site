@@ -22,14 +22,50 @@ const About = props => {
 
   return (
     <div ref={ domRef } id="about" className={isVisible ? "About visible" : "About"}>
-      <h1 className='title-2'>Some more <span className='emphasis'>about</span> me...</h1>
-      <div className='about'>
-        <div className='about-img'>
-
+      <div className='abt-subsection'>
+        <h1 className='left-title'>Some more <span className='emphasis'>about</span> me...</h1>
+        <p className='about-txt'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida dictum fusce. Sapien et ligula ullamcorper malesuada proin. Nulla porttitor massa id neque aliquam vestibulum.</p>
+      </div>
+      <div className='abt-subsection'>
+        <h1 className='right-title'>Some <span className='emphasis'> technologies</span> <br />I work with:</h1>
+        <div className='tech-grid'>
+          <div className='icon-holder'>
+            <i className="devicon-html5-plain my-devicon"></i>
+            <span className='icon-description'>HTML5</span>
+          </div>
+          <div className='icon-holder'>
+            <i className="devicon-css3-plain my-devicon"></i>
+            <span className='icon-description'>CSS3</span>
+          </div>
+          <div className='icon-holder'>
+            <i className="devicon-javascript-plain my-devicon"></i>
+            <span className='icon-description'>JavaScript</span>
+          </div>
+          <div className='icon-holder'>
+            <i className="devicon-react-original my-devicon"></i>
+            <span className='icon-description'>React</span>
+          </div>
+          <div className='icon-holder'>
+            <i className="devicon-redux-original my-devicon"></i>
+            <span className='icon-description'>Redux</span>
+          </div>
+          <div className='icon-holder'>
+            <i className="devicon-jest-plain my-devicon"></i>
+            <span className='icon-description'>Jest</span>
+          </div>
+          <div className='icon-holder'>
+            <i className="devicon-nodejs-plain my-devicon"></i>
+            <span className='icon-description'>node.js</span>
+          </div>
+          <div className='icon-holder'>
+            <i className="devicon-express-original my-devicon"></i>
+            <span className='icon-description'>Express</span>
+          </div>
+          <div className='icon-holder'>
+            <i className="devicon-mongodb-plain my-devicon"></i>
+            <span className='icon-description'>MongoDB</span>
+          </div>
         </div>
-        <p className='about-txt'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum tempus egestas sed sed risus pretium quam vulputate. Sodales ut etiam sit amet nisl purus in mollis nunc. Vel risus commodo viverra maecenas accumsan lacus vel. Semper feugiat nibh sed pulvinar proin gravida hendrerit lectus a. Congue mauris rhoncus aenean vel elit.
-        </p>
       </div>
     </div>
   )

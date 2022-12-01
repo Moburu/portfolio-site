@@ -11,3 +11,4 @@ Low Priority
 - Fix title and favicon
 - Write up an actual readme
 - Navbar onhover animation
+- Section dividers?
