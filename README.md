@@ -12,3 +12,4 @@ Low Priority
 - Write up an actual readme
 - Navbar onhover animation
 - Section dividers?
+- Maybe give the express icon a different on-hover color (or none)

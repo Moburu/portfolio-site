@@ -29,39 +29,39 @@ const About = props => {
       <div className='abt-subsection'>
         <h1 className='right-title'>Some <span className='emphasis'> technologies</span> <br />I work with:</h1>
         <div className='tech-grid'>
-          <div className='icon-holder'>
+          <div className='icon-holder html5'>
             <i className="devicon-html5-plain my-devicon"></i>
             <span className='icon-description'>HTML5</span>
           </div>
-          <div className='icon-holder'>
+          <div className='icon-holder css3'>
             <i className="devicon-css3-plain my-devicon"></i>
             <span className='icon-description'>CSS3</span>
           </div>
-          <div className='icon-holder'>
+          <div className='icon-holder javascript'>
             <i className="devicon-javascript-plain my-devicon"></i>
             <span className='icon-description'>JavaScript</span>
           </div>
-          <div className='icon-holder'>
+          <div className='icon-holder react'>
             <i className="devicon-react-original my-devicon"></i>
             <span className='icon-description'>React</span>
           </div>
-          <div className='icon-holder'>
+          <div className='icon-holder redux'>
             <i className="devicon-redux-original my-devicon"></i>
             <span className='icon-description'>Redux</span>
           </div>
-          <div className='icon-holder'>
+          <div className='icon-holder jest'>
             <i className="devicon-jest-plain my-devicon"></i>
             <span className='icon-description'>Jest</span>
           </div>
-          <div className='icon-holder'>
+          <div className='icon-holder node'>
             <i className="devicon-nodejs-plain my-devicon"></i>
             <span className='icon-description'>node.js</span>
           </div>
-          <div className='icon-holder'>
+          <div className='icon-holder express'>
             <i className="devicon-express-original my-devicon"></i>
             <span className='icon-description'>Express</span>
           </div>
-          <div className='icon-holder'>
+          <div className='icon-holder mongodb'>
             <i className="devicon-mongodb-plain my-devicon"></i>
             <span className='icon-description'>MongoDB</span>
           </div>

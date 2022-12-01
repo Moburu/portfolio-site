@@ -10,6 +10,7 @@
     opacity: 0;
     transition: .75s ease-in-out;
 }
+
 .abt-subsection {
     width: 40%;
     height: 100%;
@@ -19,6 +20,39 @@
     align-items: left;
     font-size: 28px;
 }
+
+@media screen and (min-width: 650px) and (max-width: 1440px) {
+    .About {
+        padding: 0px 20px;
+    }
+}
+
+@media screen and (min-width: 650px) and (max-width: 1200px) {
+    .About {
+        flex-direction: column;
+    }
+
+    .abt-subsection {
+        width: 66%;
+    }
+
+    .right-title {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 649px) {
+    .About {
+        padding: 0px 10px;
+        flex-direction: column;
+    }
+
+    .abt-subsection {
+        width: 90%;
+    }
+}
+
+
 
 .about-txt {
     font-weight: 200;
@@ -38,6 +72,7 @@
 .icon-description {
     font-family: 'Source Code Pro', monospace;
     font-weight: 400;
+    transition: .5s ease-in;
 }
 
 .icon-holder {
@@ -49,23 +84,12 @@
 
 .my-devicon {
     font-size: 80px;
+    transition: .5s ease-in;
 }
 
 
 .visible {
     opacity: 1;
-}
-
-@media screen and (min-width: 650px) and (max-width: 1440px) {
-    .About {
-        padding: 0px 20px;
-    }
-}
-
-@media screen and (max-width: 649px) {
-    .About {
-        padding: 0px 10px;
-    }
 }
 
 .about {
@@ -86,4 +110,40 @@
 
 .emphasis {
     color: #9748E5;
+}
+
+.html5:hover {
+    color: #e54d26;
+}
+
+.css3:hover {
+    color: #3d8fc6;
+}
+
+.javascript:hover {
+    color: #f0db4f;
+}
+
+.react:hover {
+    color: #61dafb;
+}
+
+.redux:hover {
+    color: #764abc;
+}
+
+.jest:hover {
+    color: #99425b;
+}
+
+.node:hover {
+    color: #83cd29;
+}
+
+.express:hover {
+    color: #454846;
+}
+
+.mongodb:hover {
+    color: #4faa41;
 }
