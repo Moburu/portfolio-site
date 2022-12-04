@@ -55,7 +55,7 @@ const About = props => {
           </div>
           <div className='icon-holder node'>
             <i className="devicon-nodejs-plain my-devicon"></i>
-            <span className='icon-description'>node.js</span>
+            <span className='icon-description'>Node.js</span>
           </div>
           <div className='icon-holder express'>
             <i className="devicon-express-original my-devicon"></i>

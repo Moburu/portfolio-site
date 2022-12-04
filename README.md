@@ -1,8 +1,4 @@
 TODO:
-High Priority
-- Make About section prettier (maybe include skills)
-- Add footer
-Low Priority
 - Make overlay fade out nicely on closing hamburger menu
 - Add resume download link
 - Fix projects at very small screen sizes (~400px wide)
@@ -13,3 +9,4 @@ Low Priority
 - Navbar onhover animation
 - Section dividers?
 - Maybe give the express icon a different on-hover color (or none)
+- Add picture to About section

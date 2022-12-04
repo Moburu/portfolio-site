@@ -13,6 +13,7 @@ function App() {
       <Projects />
       <About />
       <Contact />
+      <p className='credit'>Designed and developed by Steven Schiffner 2022</p>
     </div>
   );
 }
