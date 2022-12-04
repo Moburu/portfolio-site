@@ -6,7 +6,7 @@
     padding: 0px 25%;
     margin-top: 100px;
     opacity: 0;
-    transition: .75s ease-in-out;
+    transition: .5s ease-in-out;
 }
 
 .visible {

@@ -4,8 +4,9 @@ import './Navbar.css'
 import logo from './logo.png'
 import styled from 'styled-components'
 import { useState, useEffect } from 'react'
+import resume from './resume.pdf'
 
-const Resume = styled.span`
+const Resume = styled.a`
     color: #9748E5;
     border: 1px solid #9748E5;
     border-radius: 5px;
@@ -80,7 +81,7 @@ const Navbar = props => {
             <li><a href="#projects" onClick={handleLink}>Projects</a></li>
             <li> <a href="#about" onClick={handleLink}>About</a></li>
             <li><a href="#contact" onClick={handleLink}>Contact</a></li>
-            <li><a href="/" onClick={handleLink}>Resume</a></li>
+            <li><a href={resume} onClick={handleLink} download>Resume</a></li>
 
           </ul>
         </div>
@@ -100,7 +101,7 @@ const Navbar = props => {
           <a href="#contact">
             <li>Contact</li>
           </a>
-          <li><Resume>Resume</Resume></li>
+          <li><Resume href={resume} download>Resume</Resume></li>
         </ul>
       </div>
     </div>

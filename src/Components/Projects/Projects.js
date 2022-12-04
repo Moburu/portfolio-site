@@ -27,7 +27,11 @@ const Description = styled.div`
   margin: 10px;
   @media screen and (max-width: 899px) {
     border-top: 0px;
-    width: ;
+    height: ;
+  }
+  @media screen and (max-width: 500px) {
+    width: 240px;
+    margin-bottom: 42px;
   }
 `;
 
@@ -51,6 +55,10 @@ const Container = styled.div`
     margin-bottom: -10px;
     max-width: 100%;
   }
+  @media screen and (max-width: 500px) {
+    width: 240px;
+    height: 135px;
+  }
 `;
 
 const Overlay = styled.div`
@@ -67,6 +75,10 @@ const Overlay = styled.div`
   @media screen and (max-width: 899px) {
     width: ;
     height: ;
+  }
+  @media screen and (max-width: 500px) {
+    width: 240px;
+    height: 135px;
   }
 `;
 

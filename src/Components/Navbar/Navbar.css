@@ -41,6 +41,12 @@
     transition: .25s ease-in;
 }
 
+.logo {
+    height: 32px;
+    margin-top: 4px;
+}
+
+
 /* want to put in but have to change resume button */
 /* .links li:hover {
     background-color: #9748E5;
@@ -62,10 +68,6 @@
     .links {
         display: none;
     }
-}
-
-.logo {
-    height: 32px;
 }
 
 .hamburger-menu {
