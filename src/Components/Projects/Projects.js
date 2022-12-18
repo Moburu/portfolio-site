@@ -94,6 +94,15 @@ const Title = styled.h2`
   }
 `;
 
+const Linebreak = styled.br`
+  color: #9748E5;
+  width: 100%;
+  height: 2px;
+  @media screen and (min-width: 899px) {
+    display: none;
+  }
+`
+
 const Projects = props => {
   const domRef = useRef();
   const [isVisible, setIsVisible] = useState(false);
@@ -107,7 +116,7 @@ const Projects = props => {
     });
 
     observer.observe(domRef.current);
-
+    
     return () => observer.disconnect();
   })
 
@@ -125,6 +134,7 @@ const Projects = props => {
               <Title position="right">Lorem Ipsum</Title>
             </Container>
           </Project>
+          <Linebreak />
           <Project position="left">
             <Container src={google}>
               <Overlay />

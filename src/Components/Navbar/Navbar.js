@@ -35,7 +35,7 @@ const Navbar = props => {
     if ((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 30) || currentScrollPos < 10 ) {
         setIsVisible(true)
         setPrevScrollPos(currentScrollPos);
-    } // simply update the position if we scroll up by 30 pixels or less
+    } // if we scroll up by 30 pixels or less, simply update the position
     else if (prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos <= 30) {
       setPrevScrollPos(currentScrollPos);
     } // hide navbar if we scroll down
@@ -93,13 +93,13 @@ const Navbar = props => {
         </div>
         <ul className="links">
           <a href="#projects">
-            <li>Projects</li>
+            <li><span className='glow'>Projects</span></li>
           </a>
           <a href="#about">
-            <li>About</li>
+            <li><span className="glow">About</span></li>
           </a>
           <a href="#contact">
-            <li>Contact</li>
+            <li><span className="glow">Contact</span></li>
           </a>
           <li><Resume href={resume} download>Resume</Resume></li>
         </ul>

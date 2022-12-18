@@ -30,6 +30,8 @@
 
 .credit {
   font-family: 'Source Code Pro', monospace;
+  font-weight: 200;
+  font-size: 12px;
 }
 
 .App-link {

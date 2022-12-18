@@ -41,6 +41,14 @@
     transition: .25s ease-in;
 }
 
+.links .glow {
+    transition: .25s ease-in-out;
+}
+
+.links .glow:hover {
+    text-shadow: 0px 0px 10px #9748E5;
+}
+
 .logo {
     height: 32px;
     margin-top: 4px;
@@ -79,6 +87,7 @@
     z-index: 12;
     top: 20px;
     right: 20px;
+    cursor: pointer;
 }
 
 .hamburger-menu.close span:nth-child(1) {
@@ -118,10 +127,10 @@
     right: 0;
     bottom: 0;
     z-index: 10;
+    pointer-events: none;
 }
 
 .overlay.hidden {
-    display: none;
     opacity: 0;
 }
 
@@ -155,17 +164,24 @@
 .sidebar-links li {
     display: block;
     font-size: 48px;
+    text-align: left;
+}
+
+.sidebar-links a {
+    width: 100%;
+    height: 100%;
+    display: block;
     padding: .5em;
     transition: .25s ease-in;
-    text-align: left;
 }
 
 .sidebar-links > li:nth-child(1) {
     color: #9748E5;
     font-weight: 300;
+    padding: .5em;
 }
 
-.sidebar-links li:hover:nth-child(n+2) {
+.sidebar-links li:hover:nth-child(n+2) > a {
     background-color: #9748E5;
-    padding-left: 2em;
+    padding-left: 1.5em;
 }
