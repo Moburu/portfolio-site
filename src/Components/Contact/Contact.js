@@ -49,9 +49,9 @@ const Contact = props => {
     <div ref={ domRef } id="contact" className={isVisible ? "Contact visible" : "Contact"}>
       <h1 className='title-3'>I'd love to hear from you! <br /><span className='emphasis'>Contact</span> me via the links below:</h1>
       <div className='button-container'>
-        <Button>Email</Button>
-        <Button>GitHub</Button>
-        <Button>LinkedIn</Button>
+        <a href="mailto:stevenschiffner3@gmail.com"><Button>Email</Button></a>
+        <a href="https://github.com/Moburu"><Button>GitHub</Button></a>
+        <a href="https://www.linkedin.com/in/steven-schiffner-b972b5163/"><Button>LinkedIn</Button></a>
       </div>
     </div>
   )
