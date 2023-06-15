@@ -1,4 +1,6 @@
 TODO:
+- Set button links to curser:pointer
+- Specify transition properties so components dont smoothly resize along with the page, it looks weird
 - Remove all placeholder text/images
 - Write up an actual readme
 - Make links navigate to correct height on page

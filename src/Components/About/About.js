@@ -24,7 +24,7 @@ const About = props => {
     <div ref={ domRef } id="about" className={isVisible ? "About visible" : "About"}>
       <div className='abt-subsection'>
         <h1 className='left-title'>Some more <span className='emphasis'>about</span> me...</h1>
-        <p className='about-txt'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida dictum fusce. Sapien et ligula ullamcorper malesuada proin. Nulla porttitor massa id neque aliquam vestibulum.</p>
+        <p className='about-txt'>I'm a New Jersey based developer with a background in math. I've been interested in coding since I was in high school, and after graduating from NYU with a BA in math, I decided to pursue coding as a career. I've since been honing my skills and developing projects in my spare time, using online resources such as Codecademy and The Odin Project. I'd love to hear about any and all opportunities involving web development!</p>
       </div>
       <div className='abt-subsection'>
         <h1 className='right-title'>Some <span className='emphasis'> technologies</span> <br />I work with:</h1>

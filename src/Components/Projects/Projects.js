@@ -2,7 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import './Projects.css'
 import styled from 'styled-components';
-import google from './google.png'
+import simplereddit from './simplereddit.PNG';
+import somewhere from './somewhere.png';
+import battleship from './battleship.PNG';
 import { useRef, useState, useEffect } from 'react';
 
 const Project = styled.div`
@@ -51,6 +53,7 @@ const Container = styled.div`
   border-radius: 5px;
   background-image: url(${props => props.src});
   background-size: contain;
+  background-size:100% 100%;
   @media screen and (max-width: 899px) {
     margin-bottom: -10px;
     max-width: 100%;
@@ -116,7 +119,7 @@ const Projects = props => {
     });
 
     observer.observe(domRef.current);
-    
+
     return () => observer.disconnect();
   })
 
@@ -124,37 +127,43 @@ const Projects = props => {
     <div ref={ domRef } id="projects" className={isVisible ? "Projects visible" : "Projects"}>
       <h1 className='title'>Here are some of the <br /><span className='emphasis'>projects</span> I've worked on.</h1>
       <div className='project-grid'>
-          <Project position="right">
-            <Description>
-              <DescText align="right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</DescText>
-              <DescText align="right">HTML - CSS - JS - Node - React</DescText>
-            </Description>
-            <Container src={google}>
-              <Overlay />
-              <Title position="right">Lorem Ipsum</Title>
-            </Container>
-          </Project>
+          <a href="https://moburu.github.io/simplereddit" rel="noreferrer" target="_blank">
+            <Project position="right">
+              <Description>
+                <DescText align="right">Uses Reddit's JSON API to fetch data based on a user query, then displays it in the form of a stack of cards.</DescText>
+                <DescText align="right">HTML - CSS - JS - Node - React</DescText>
+              </Description>
+              <Container src={simplereddit}>
+                <Overlay />
+                <Title position="right">simplereddit</Title>
+              </Container>
+            </Project>
+          </a>
           <Linebreak />
-          <Project position="left">
-            <Container src={google}>
-              <Overlay />
-              <Title position="left">Lorem Ipsum</Title>
-            </Container>
-            <Description >
-              <DescText align="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</DescText>
-              <DescText align="left">HTML - CSS - JS - Node - React</DescText>
-            </Description>
-          </Project>
-          <Project position="right">
-            <Description >
-              <DescText align="right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</DescText>
-              <DescText align="right">HTML - CSS - JS - Node - React</DescText>
-            </Description>
-            <Container src={google}>
-              <Overlay />
-              <Title position="right">Lorem Ipsum</Title>
-            </Container>
-          </Project>
+          <a href="https://moburu.github.io/somewhere" rel="noreferrer" target="_blank">
+            <Project position="left">
+              <Container src={somewhere}>
+                <Overlay />
+                <Title position="left">Somewhere</Title>
+              </Container>
+              <Description >
+                <DescText align="left">A to-do app using localStorange to save user content. Features drag-and-drop animations.</DescText>
+                <DescText align="left">HTML - CSS - JS - Node - React</DescText>
+              </Description>
+            </Project>
+          </a>
+          <a href="https://moburu.github.io/battleship" rel="noreferrer" target="_blank">
+            <Project position="right">
+              <Description >
+                <DescText align="right">A clone of the popular board game 'Battleship.'</DescText>
+                <DescText align="right">HTML - CSS - JS - Node - React</DescText>
+              </Description>
+              <Container src={battleship}>
+                <Overlay />
+                <Title position="right">Battleship</Title>
+              </Container>
+            </Project>
+          </a>
       </div>
     </div>
   )

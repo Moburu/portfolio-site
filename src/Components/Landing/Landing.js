@@ -23,7 +23,7 @@ const Landing = props => {
   return (
     <div ref={ domRef } id="landing" className={isVisible ? "Landing visible" : "Landing"}>
       <h1 className='landing-title'>Hi! I'm <span className="emphasis">Steven Schiffner</span>, <br /> web developer.</h1>
-      <p className='description'>I’m interested in making beautiful, robust, and useful web apps. Click the link below see what I’ve worked on and learn more about me!</p>
+      <p className='description'>I’m interested in making beautiful, robust, and useful web apps. Scroll down to see what I’ve worked on and learn more about me!</p>
       <div className='socials'>
         <a href="https://github.com/Moburu"><img className="github" alt="The github logo, linking to the author's github page." src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /></a>
         <a href="https://www.linkedin.com/in/steven-schiffner-b972b5163/"><img className='linkedin' alt="The linkedin logo, linking to the author's linkedin page." src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" /></a>
