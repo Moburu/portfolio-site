@@ -45,9 +45,9 @@ const About = props => {
             <i className="devicon-react-original my-devicon"></i>
             <span className='icon-description'>React</span>
           </div>
-          <div className='icon-holder redux'>
-            <i className="devicon-redux-original my-devicon"></i>
-            <span className='icon-description'>Redux</span>
+          <div className='icon-holder python'>
+            <i className="devicon-python-plain my-devicon"></i>
+            <span className='icon-description'>Python</span>
           </div>
           <div className='icon-holder jest'>
             <i className="devicon-jest-plain my-devicon"></i>
@@ -61,9 +61,9 @@ const About = props => {
             <i className="devicon-express-original my-devicon"></i>
             <span className='icon-description'>Express</span>
           </div>
-          <div className='icon-holder mongodb'>
-            <i className="devicon-mongodb-plain my-devicon"></i>
-            <span className='icon-description'>MongoDB</span>
+          <div className='icon-holder postgresql'>
+            <i className="devicon-postgresql-plain my-devicon"></i>
+            <span className='icon-description'>PostgreSQL</span>
           </div>
         </div>
       </div>

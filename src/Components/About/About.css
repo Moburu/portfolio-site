@@ -145,8 +145,8 @@
     color: #61dafb;
 }
 
-.redux:hover {
-    color: #764abc;
+.python:hover {
+    color: #5193f7;
 }
 
 .jest:hover {
@@ -161,6 +161,6 @@
     color: #666d69;
 }
 
-.mongodb:hover {
-    color: #4faa41;
+.postgresql:hover {
+    color: #1c3768;
 }

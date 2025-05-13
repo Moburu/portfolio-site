@@ -5,6 +5,8 @@ import styled from 'styled-components';
 import simplereddit from './simplereddit.PNG';
 import somewhere from './somewhere.png';
 import battleship from './battleship.PNG';
+import nycmeleestats from './nycmeleestats.PNG'
+import dataviz from './dataviz.PNG'
 import { useRef, useState, useEffect } from 'react';
 
 const Project = styled.div`
@@ -29,7 +31,6 @@ const Description = styled.div`
   margin: 10px;
   @media screen and (max-width: 899px) {
     border-top: 0px;
-    height: ;
   }
   @media screen and (max-width: 500px) {
     width: 240px;
@@ -127,6 +128,31 @@ const Projects = props => {
     <div ref={ domRef } id="projects" className={isVisible ? "Projects visible" : "Projects"}>
       <h1 className='title'>Here are some of the <br /><span className='emphasis'>projects</span> I've worked on.</h1>
       <div className='project-grid'>
+          <a href="https://nycmelee.vercel.app" rel="noreferrer" target="_blank">
+            <Project position="right">
+              <Description>
+                <DescText align="right">Allows competitors in NYC Melee tournaments to access their stats, featuring player cards and graphs.</DescText>
+                <DescText align="right">HTML - CSS - JS - Node - React - Python - SQL</DescText>
+              </Description>
+              <Container src={nycmeleestats}>
+                <Overlay />
+                <Title position="right">NYCMelee Stats</Title>
+              </Container>
+            </Project>
+          </a>
+          <Linebreak />
+          <a href="https://captaindarshan.github.io/CDC-DATA-ANALYSIS/" rel="noreferrer" target="_blank">
+            <Project position="left">
+              <Container src={dataviz}>
+                <Overlay />
+                <Title position="left">CDC Data Viz</Title>
+              </Container>
+              <Description >
+                <DescText align="left">A site offering interactive visualizations for CDC disease data including a chloropleth map.</DescText>
+                <DescText align="left">HTML - CSS - JS - Python - SQL</DescText>
+              </Description>
+            </Project>
+          </a>
           <a href="https://moburu.github.io/simplereddit" rel="noreferrer" target="_blank">
             <Project position="right">
               <Description>
@@ -136,31 +162,6 @@ const Projects = props => {
               <Container src={simplereddit}>
                 <Overlay />
                 <Title position="right">simplereddit</Title>
-              </Container>
-            </Project>
-          </a>
-          <Linebreak />
-          <a href="https://moburu.github.io/somewhere" rel="noreferrer" target="_blank">
-            <Project position="left">
-              <Container src={somewhere}>
-                <Overlay />
-                <Title position="left">Somewhere</Title>
-              </Container>
-              <Description >
-                <DescText align="left">A to-do app using localStorange to save user content. Features drag-and-drop animations.</DescText>
-                <DescText align="left">HTML - CSS - JS - Node - React</DescText>
-              </Description>
-            </Project>
-          </a>
-          <a href="https://moburu.github.io/battleship" rel="noreferrer" target="_blank">
-            <Project position="right">
-              <Description >
-                <DescText align="right">A clone of the popular board game 'Battleship.'</DescText>
-                <DescText align="right">HTML - CSS - JS - Node - React</DescText>
-              </Description>
-              <Container src={battleship}>
-                <Overlay />
-                <Title position="right">Battleship</Title>
               </Container>
             </Project>
           </a>
