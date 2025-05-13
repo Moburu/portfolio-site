@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/portfolio-site/static/css/main.f9dba930.css",
-    "main.js": "/portfolio-site/static/js/main.b269f51c.js",
-    "static/js/787.37faa4c4.chunk.js": "/portfolio-site/static/js/787.37faa4c4.chunk.js",
+    "main.css": "/portfolio-site/static/css/main.0d50f20e.css",
+    "main.js": "/portfolio-site/static/js/main.fedd9868.js",
+    "static/js/488.d540151d.chunk.js": "/portfolio-site/static/js/488.d540151d.chunk.js",
     "static/media/simplereddit.PNG": "/portfolio-site/static/media/simplereddit.56ac0f26dab57bf09536.PNG",
+    "static/media/dataviz.PNG": "/portfolio-site/static/media/dataviz.436150bb75d944114949.PNG",
     "static/media/logo.png": "/portfolio-site/static/media/logo.66055d3918df4914320c.png",
-    "static/media/resume.pdf": "/portfolio-site/static/media/resume.3e36a26ad79bb7493d2f.pdf",
+    "static/media/resume.pdf": "/portfolio-site/static/media/resume.ccb01a819087b59254cc.pdf",
+    "static/media/nycmeleestats.PNG": "/portfolio-site/static/media/nycmeleestats.987fa5eb870f4c7e47f8.PNG",
     "static/media/battleship.PNG": "/portfolio-site/static/media/battleship.cdf3db5debbc1eaeb730.PNG",
     "static/media/somewhere.png": "/portfolio-site/static/media/somewhere.a4c3309f3ff190dbb035.png",
     "index.html": "/portfolio-site/index.html",
-    "main.f9dba930.css.map": "/portfolio-site/static/css/main.f9dba930.css.map",
-    "main.b269f51c.js.map": "/portfolio-site/static/js/main.b269f51c.js.map",
-    "787.37faa4c4.chunk.js.map": "/portfolio-site/static/js/787.37faa4c4.chunk.js.map"
+    "main.0d50f20e.css.map": "/portfolio-site/static/css/main.0d50f20e.css.map",
+    "main.fedd9868.js.map": "/portfolio-site/static/js/main.fedd9868.js.map",
+    "488.d540151d.chunk.js.map": "/portfolio-site/static/js/488.d540151d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f9dba930.css",
-    "static/js/main.b269f51c.js"
+    "static/css/main.0d50f20e.css",
+    "static/js/main.fedd9868.js"
   ]
 }
